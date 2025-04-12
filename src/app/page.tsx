@@ -3,7 +3,7 @@
 import {generateRoast} from '@/ai/flows/generate-roast';
 import {moderateContent} from '@/ai/flows/moderate-content';
 import {Button} from '@/components/ui/button';
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from '@/components/ui/card';
+import {Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter} from '@/components/ui/card';
 import {Input} from '@/components/ui/input';
 import {Textarea} from '@/components/ui/textarea';
 import {toast} from '@/hooks/use-toast';
@@ -80,7 +80,7 @@ export default function Home() {
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
           <CardTitle className="text-2xl font-bold tracking-tight flex items-center space-x-2">
             <MessageSquare className="h-6 w-6 text-primary" />
-            <span>RoastMaster HackBot</span>
+            <span>HackBegin</span>
           </CardTitle>
           <CardDescription>Ask a hacking-related question, get roasted!</CardDescription>
         </CardHeader>
@@ -116,6 +116,11 @@ export default function Home() {
             </Button>
           </div>
         </CardContent>
+         <CardFooter className="flex justify-center items-center">
+          <a href="https://github.com/TirupMehta" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+            © Tirup Mehta 2025
+          </a>
+        </CardFooter>
       </Card>
     </div>
   );

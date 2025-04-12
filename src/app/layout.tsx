@@ -1,3 +1,4 @@
+'use client';
 
 import type {Metadata} from 'next';
 import {Geist, Geist_Mono} from 'next/font/google';
@@ -22,8 +23,8 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'RoastMaster HackBot',
-  description: 'Get roasted on your hacking questions!',
+  title: 'HackBegin',
+  description: 'Your hacking journey starts here.',
 };
 
 export default function RootLayout({
