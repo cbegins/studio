@@ -4,6 +4,7 @@ import './globals.css';
 import {Toaster} from '@/components/ui/toaster';
 import {Roboto_Mono} from 'next/font/google';
 import {metadata} from './metadata';
+import {Nunito} from "next/font/google";
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -21,6 +22,12 @@ const robotoMono = Roboto_Mono({
   variable: '--font-roboto-mono',
 });
 
+const nunito = Nunito({
+  subsets: ['latin'],
+  variable: '--font-nunito',
+  display: 'swap',
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${robotoMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${robotoMono.variable} ${nunito.variable} antialiased`}>
         {children}
         <Toaster />
       </body>
