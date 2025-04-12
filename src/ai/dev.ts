@@ -1,1 +1,2 @@
-// Flows will be imported for their side effects in this file.
+import '@/ai/flows/moderate-content.ts';
+import '@/ai/flows/generate-roast.ts';
