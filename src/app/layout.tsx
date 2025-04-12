@@ -1,10 +1,9 @@
-'use client';
-
 import type {Metadata} from 'next';
 import {Geist, Geist_Mono} from 'next/font/google';
 import './globals.css';
 import {Toaster} from '@/components/ui/toaster';
 import {Roboto_Mono} from 'next/font/google';
+import {metadata} from './metadata';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -21,11 +20,6 @@ const robotoMono = Roboto_Mono({
   weight: ['400', '700'],
   variable: '--font-roboto-mono',
 });
-
-export const metadata: Metadata = {
-  title: 'HackBegin',
-  description: 'Your hacking journey starts here.',
-};
 
 export default function RootLayout({
   children,
